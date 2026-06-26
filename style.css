@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: radial-gradient(circle at top, #090b26 0%, #030409 45%, #020206 100%);
+  color: #d1d8ff;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hud {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  max-width: 320px;
+  z-index: 10;
+  text-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+}
+
+.hud h1 {
+  margin: 0 0 10px;
+  font-size: clamp(2rem, 3vw, 3rem);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hud p {
+  margin: 0 0 8px;
+  line-height: 1.35;
+  color: #c4cff6;
+}
+
+.hud .hint {
+  margin-top: 10px;
+  font-size: 0.92rem;
+  color: #90a6ff;
+}
